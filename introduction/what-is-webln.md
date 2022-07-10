@@ -2,7 +2,7 @@
 
 ### Introduction
 
-WebLN is a set of specifications for Lightning apps and client providers to facilitate communication between web apps and users' lightning nodes in a secure way. It provides a programmatic, permissioned interface for letting applications ask users to send payments, generate invoices to receive payments, and much more.
+WebLN is a set of specifications for Lightning apps and client providers to facilitate communication between web apps and users' Lightning nodes in a secure way. It provides a programmatic, permissioned interface for letting applications ask users to send payments, generate invoices to receive payments, and much more.
 
 ![WebLN  Provider functionality](<../.gitbook/assets/Group 46 (1).png>)
 
