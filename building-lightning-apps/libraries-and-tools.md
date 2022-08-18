@@ -12,7 +12,7 @@ Available libraries for a quick start&#x20;
 
 ### Tools
 
-* [Lightning Payment Request Decoder](https://lndecode.com)
+* [Lightning Payment Request Decoder](https://lndecode.com/)
 * [LNURL Decoder / Encoder](https://lnurl.fiatjaf.com/codec/)
 
 ###

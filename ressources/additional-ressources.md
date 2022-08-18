@@ -6,7 +6,7 @@ The listed links are not related to WebLN. They serve the purpose for interested
 
 * [Bitcoin.org](https://bitcoin.org/en/vocabulary)&#x20;
 * [Bitcoin Q + A glossary](https://www.bitcoinqna.com/glossary)&#x20;
-* [bolt.fun](https://bolt.fun)
-* [Lightning Node Management](https://www.lightningnode.info)
+* [bolt.fun](https://bolt.fun/)
+* [Lightning Node Management](https://www.lightningnode.info/)
 * [Mastering the Lightning Network](https://github.com/lnbook/lnbook)&#x20;
 * [Seminar for Bitcoin and Lightning protocol](https://github.com/chaincodelabs/seminars)&#x20;
