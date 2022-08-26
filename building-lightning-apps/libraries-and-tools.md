@@ -14,5 +14,7 @@ Available libraries for a quick start&#x20;
 
 * [Lightning Payment Request Decoder](https://lndecode.com/)
 * [LNURL Decoder / Encoder](https://lnurl.fiatjaf.com/codec/)
+* [Lightning App Template](https://github.com/reneaaron/lapp-template/) (GitHub)
+* [Lightning App Template](https://lightning-app-template.glitch.me/) (Glitch)
 
 ###
