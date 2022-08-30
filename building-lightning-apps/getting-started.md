@@ -20,9 +20,53 @@ if (typeof window.webln !== 'undefined') {
 }
 ```
 
-{% hint style="info" %}
-It is recommended to provide alternative options (QR-Codes, Copy invoice) for users that don't have WebLN.
+{% hint style="warning" %}
+`window.webln` might not be available during pageload. See the code example below for proper detection.
 {% endhint %}
+
+<details>
+
+<summary>Detect if a WebLN provider is available</summary>
+
+```javascript
+async function detectWebLNProvider(timeoutParam) {
+  const timeout = timeoutParam ?? 3000;
+  let handled = false;
+
+  return new Promise((resolve) => {
+    if (window.webln) {
+      handleWebLN();
+    } else {
+      document.addEventListener("webln:ready", handleWebLN, { once: true });
+      setTimeout(handleWebLN, timeout);
+    }
+
+    function handleWebLN() {
+      if (handled) {
+        return;
+      }
+      handled = true;
+
+      document.removeEventListener("webln:ready", handleWebLN);
+
+      if (window.webln) {
+        resolve(window.webln);
+      } else {
+        resolve(null);
+      }
+    }
+  });
+}
+
+const provider = await detectWebLNProvider();
+if (provider) {
+  console.log("✅ Provider available:", provider);
+} else {
+  console.log("❌ No provider available.");
+}
+```
+
+</details>
 
 ### Enable WebLN <a href="#connecting-to-metamask" id="connecting-to-metamask"></a>
 
