@@ -12,7 +12,7 @@ Browsers with WebLN capabilities provide APIs using a global JavaScript variable
 
 ### Detecting WebLN support
 
-Before you start using WebLN you need to check for browser support by checking if the the variable `window.webln` is defined:
+Before you start using WebLN you need to check for browser support by checking if the variable `window.webln` is defined:
 
 ```javascript
 if (typeof window.webln !== 'undefined') {
