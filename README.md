@@ -1,6 +1,8 @@
 # 👋 Welcome
 
 Welcome to the Lightning Web Standard (WebLN). This guide covers how to build a Bitcoin Lightning-driven web application using the WebLN standard. \
+
+
 Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. Hence, Bitcoin Lightning’s use cases are as vast as its user base. However, building them does not need to be complicated. We designed this guide to help anyone to get started quickly. We can’t imagine every possible use case, but we can help you to build for them.
 
 You may be interested in reading this guide if you want to build or operate a web application
