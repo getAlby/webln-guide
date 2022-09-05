@@ -31,6 +31,7 @@ if (typeof window.webln !== 'undefined') {
 ```javascript
 async function detectWebLNProvider(timeoutParam) {
   const timeout = timeoutParam ?? 3000;
+  const interval = 100;
   let handled = false;
 
   return new Promise((resolve) => {
@@ -38,7 +39,16 @@ async function detectWebLNProvider(timeoutParam) {
       handleWebLN();
     } else {
       document.addEventListener("webln:ready", handleWebLN, { once: true });
-      setTimeout(handleWebLN, timeout);
+      
+      let i = 0;
+      const checkInterval = setInterval(function() {
+        console.log(i > timeout/interval, i , timeout,interval);
+        if (window.webln || i >= timeout/interval) {
+          handleWebLN();
+          clearInterval(checkInterval);
+        }
+        i++;
+      }, interval);
     }
 
     function handleWebLN() {
@@ -56,13 +66,6 @@ async function detectWebLNProvider(timeoutParam) {
       }
     }
   });
-}
-
-const provider = await detectWebLNProvider();
-if (provider) {
-  console.log("✅ Provider available:", provider);
-} else {
-  console.log("❌ No provider available.");
 }
 ```
 
