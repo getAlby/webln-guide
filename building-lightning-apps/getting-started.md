@@ -42,7 +42,6 @@ async function detectWebLNProvider(timeoutParam) {
       
       let i = 0;
       const checkInterval = setInterval(function() {
-        console.log(i > timeout/interval, i , timeout,interval);
         if (window.webln || i >= timeout/interval) {
           handleWebLN();
           clearInterval(checkInterval);
