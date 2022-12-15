@@ -16,7 +16,9 @@ interface GetInfoResponse = {
     alias: string;
     pubkey: string;
     color?: string;
-  };
+  },
+  // Not supported by all connectors (see webln.request for more info)
+  methods: string[]; 
 }
 ```
 
