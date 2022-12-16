@@ -1,5 +1,5 @@
 ---
-description: >-
+Description: >-
   What follows are suggestions on how best to integrate WebLN into your Bitcoin
   Lightning app. These aren't strict & hard rules, just ideas on how to prevent
   your user from being frustrated or overwhelm
@@ -46,7 +46,7 @@ if (window.webln) {
 }
 ```
 
-If a users does not have a client that is compatible, inform them (e.g. with [Error](webln-reference/error-handling.md) messages) and let them know how to get started with a WebLN client. This is also a good time to promote your favorite WebLN provider projects!&#x20;
+If a user does not have a compatible client, inform them (e.g. with [Error](webln-reference/error-handling.md) messages) and let them know how to get started with a WebLN client. This is also a good time to promote your favorite WebLN provider projects!&#x20;
 
 For simple use cases such as making payments, you can always just use BOLT-11 links instead of `webln.sendPayment` to have maximum compatibility with all types of Lightning clients.
 
