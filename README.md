@@ -3,7 +3,7 @@
 Welcome to the Lightning Web Standard (WebLN). This guide covers how to build a Bitcoin Lightning-driven web application using the WebLN standard. \
 
 
-Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. Hence, Bitcoin Lightning’s use cases are as vast as its user base. However, building them does not need to be complicated. We designed this guide to help anyone to get started quickly. We can’t imagine every possible use case, but we can help you to build for them.
+Bitcoin is a global payment protocol that anyone with Internet access can participate in and contribute to. Hence, Bitcoin Lightning’s use cases are as vast as its user base. However, building them does not need to be complicated. We designed this guide to help anyone get started quickly. We can’t imagine every possible use case, but we can help you to build for them.
 
 You may be interested in reading this guide if you want to build or operate a web application
 
@@ -14,7 +14,7 @@ All you need is to interact with a client application such as a browser extensio
 
 WebLN is a JavaScript interface to the Bitcoin Lightning Network. There are functions to:&#x20;
 
-* Get information about a users Bitcoin Lightning node ([`webln.getInfo`](building-lightning-apps/webln-reference/))&#x20;
+* Get information about a user's Bitcoin Lightning node ([`webln.getInfo`](building-lightning-apps/webln-reference/))&#x20;
 * Send a payment ([`webln.sendPayment`](building-lightning-apps/webln-reference/))&#x20;
 * Request an invoice to receive a payment ([`webln.makeInvoice`](building-lightning-apps/webln-reference/))&#x20;
 * Request a signature of an arbitrary message ([`webln.signMessage`](building-lightning-apps/webln-reference/))&#x20;
