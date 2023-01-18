@@ -9,7 +9,7 @@ description: >-
 ➡️ This API is part of the upcoming [WebBTC](https://webbtc.dev/) spec.&#x20;
 
 {% hint style="warning" %}
-The available APIs heavily depend on the connector that is used. You can use [`webln.getInfo`](webln.getinfo.md) to check for supported methods. (`methods`)&#x20;
+The available APIs heavily depend on the connector (LND, CLN, etc) that is used. You can use [`webln.getInfo`](webln.getinfo.md) to check for supported methods. (`methods`)&#x20;
 {% endhint %}
 
 #### Method
