@@ -17,7 +17,7 @@
   * [webln.sendPayment()](building-lightning-apps/webln-reference/webln.sendpayment.md)
   * [webln.signMessage()](building-lightning-apps/webln-reference/webln.signmessage.md)
   * [🆕 webln.request()](building-lightning-apps/webln-reference/webln.request.md)
-  * [🆕 webln.lnurl()](building-lightning-apps/webln-reference/webln.request-1.md)
+  * [🆕 webln.lnurl()](building-lightning-apps/webln-reference/webln.lnurl.md)
   * [webln.verifyMessage()](building-lightning-apps/webln-reference/webln.verifymessage.md)
   * [Error handling](building-lightning-apps/webln-reference/error-handling.md)
 * [🛠 Libraries and Tools](building-lightning-apps/libraries-and-tools.md)
