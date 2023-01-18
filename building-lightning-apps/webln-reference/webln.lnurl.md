@@ -3,7 +3,7 @@
 Request that the user executes a [LNURL](https://github.com/lnurl/luds) request. The application needs to provide a [LNURL](https://github.com/lnurl/luds/blob/luds/01.md) string which should be provided by the application's backend.
 
 {% hint style="warning" %}
-This API may not be available on all connectors.
+This API may not be available on all [providers](https://www.webln.guide/ressources/webln-providers).
 {% endhint %}
 
 #### Method
