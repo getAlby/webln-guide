@@ -4,8 +4,8 @@ Available libraries and tools for a quick start.
 
 ### Libraries
 
-* [WebLN](https://github.com/joule-labs/webln)\
-  Typescript library for WebLN
+* [webln-types](https://www.npmjs.com/package/@webbtc/webln-types)\
+  Typescript definitions for WebLN
 * [flutter\_webln](https://github.com/aniketambore/flutter\_webln)\
   Flutter library for WebLN
 
@@ -13,6 +13,7 @@ Available libraries and tools for a quick start.
 
 * [webln-demo](https://github.com/bumi/webln-demo)
 * [WebLN Experiments](https://webln.twentyuno.net)
+* [WebLN Sandbox](https://rolznz.github.io/webln-sandbox)
 
 ### Templates
 

@@ -8,7 +8,7 @@
 
 ## Building Lightning Apps
 
-* [👨💻 Getting Started](building-lightning-apps/getting-started.md)
+* [👨💻 👨💻 Getting Started](building-lightning-apps/getting-started.md)
 * [💻 WebLN Reference](building-lightning-apps/webln-reference/README.md)
   * [webln.enable()](building-lightning-apps/webln-reference/webln.enable.md)
   * [webln.getInfo()](building-lightning-apps/webln-reference/webln.getinfo.md)
@@ -17,6 +17,7 @@
   * [webln.sendPayment()](building-lightning-apps/webln-reference/webln.sendpayment.md)
   * [webln.signMessage()](building-lightning-apps/webln-reference/webln.signmessage.md)
   * [🆕 webln.request()](building-lightning-apps/webln-reference/webln.request.md)
+  * [🆕 webln.lnurl()](building-lightning-apps/webln-reference/webln.request-1.md)
   * [webln.verifyMessage()](building-lightning-apps/webln-reference/webln.verifymessage.md)
   * [Error handling](building-lightning-apps/webln-reference/error-handling.md)
 * [🛠 Libraries and Tools](building-lightning-apps/libraries-and-tools.md)
@@ -26,7 +27,7 @@
 
 * [⚡ WebLN Providers](ressources/webln-providers.md)
 * [🚀 Showcases](ressources/showcases.md)
-* [👩🏫 Tutorials](ressources/tutorials.md)
+* [👩🏫 👩🏫 Tutorials](ressources/tutorials.md)
 * [🌐 Additional Ressources](ressources/additional-ressources.md)
 
 ## Contribute
