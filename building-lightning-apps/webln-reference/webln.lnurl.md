@@ -43,7 +43,7 @@ type LNURLPayResponse =
 #### LNURL-auth Response&#x20;
 
 ```typescript
-type LNURLPayResponse =
+type LNURLAuthResponse =
   | {
       status: "OK";
       data: { 
