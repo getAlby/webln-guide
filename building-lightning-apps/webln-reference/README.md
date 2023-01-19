@@ -24,6 +24,14 @@ Then, use the APIs
 [webln.makeinvoice.md](webln.makeinvoice.md)
 {% endcontent-ref %}
 
+{% content-ref url="webln.request.md" %}
+[webln.request.md](webln.request.md)
+{% endcontent-ref %}
+
+{% content-ref url="webln.lnurl.md" %}
+[webln.lnurl.md](webln.lnurl.md)
+{% endcontent-ref %}
+
 {% content-ref url="webln.sendpayment.md" %}
 [webln.sendpayment.md](webln.sendpayment.md)
 {% endcontent-ref %}

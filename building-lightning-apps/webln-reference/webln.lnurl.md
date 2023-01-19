@@ -1,9 +1,11 @@
 # 🆕 webln.lnurl()
 
-Request that the user executes a [LNURL](https://github.com/lnurl/luds) request. The application needs to provide a [LNURL](https://github.com/lnurl/luds/blob/luds/01.md) string which should be provided by the application's backend.
+Request to execute a [LNURL](https://github.com/lnurl/luds) request. The application needs to provide a [LNURL](https://github.com/lnurl/luds/blob/luds/01.md) string which should be provided by the application's backend.&#x20;
+
+The method returns a promise which resolves once the LNURL flow is completed. It returns the last response from the LNURL server. For LNURL-pay requests it also contains payment information (preimage, payment hash) and for LNURL-auth requests it contains auth information (message, signature)&#x20;
 
 {% hint style="warning" %}
-This API may not be available on all [providers](https://www.webln.guide/ressources/webln-providers).
+This API may not be available on all [providers](https://www.webln.guide/ressources/webln-providers).&#x20;
 {% endhint %}
 
 #### Method
@@ -18,6 +20,36 @@ async function lnurl(lnurl: string): LNURLResponse;
 type LNURLResponse =
   | {
       status: "OK";
+      data?: unknown
+    }
+  | { status: "ERROR"; reason: string };
+```
+
+#### LNURL-pay Response&#x20;
+
+```typescript
+type LNURLPayResponse =
+  | {
+      status: "OK";
+      data: { 
+        preimage: string, 
+        paymentHash: string, 
+        paymentRequest: string
+      }
+    }
+  | { status: "ERROR"; reason: string };
+```
+
+#### LNURL-auth Response&#x20;
+
+```typescript
+type LNURLPayResponse =
+  | {
+      status: "OK";
+      data: { 
+        message: string, 
+        signature: string
+      }
     }
   | { status: "ERROR"; reason: string };
 ```
@@ -26,8 +58,10 @@ type LNURLResponse =
 
 ```typescript
 // const lnurl = (provided by your application backend)
+if (!webln.lnurl) { alert('not supported'); }
+
 await webln.enable();
-const result = await webln.lnurl(lnurl);
+const result = await webln.lnurl(lnurl); // promise resolves once the LNURL process is finished (e.g. a payment is sent or the login is complete)
 ```
 
 #### Demos
