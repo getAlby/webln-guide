@@ -1,6 +1,6 @@
 # 🆕 webln.lnurl()
 
-Request to execute a [LNURL](https://github.com/lnurl/luds) request. The application needs to provide a [LNURL](https://github.com/lnurl/luds/blob/luds/01.md) string which should be provided by the application's backend.&#x20;
+Request to execute a [LNURL](https://github.com/lnurl/luds) request. The application needs to pass a [LNURL](https://github.com/lnurl/luds/blob/luds/01.md) string which should be provided for example by the application's backend.
 
 The method returns a promise which resolves once the LNURL flow is completed. It returns the last response from the LNURL server. For LNURL-pay requests it also contains payment information (preimage, payment hash) and for LNURL-auth requests it contains auth information (message, signature)&#x20;
 
