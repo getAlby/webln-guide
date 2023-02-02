@@ -32,6 +32,8 @@ await webln.signMessage("Sample message");
 
 `webln.signMessage()` **in the wild**
 
-[https://amboss.space/](https://amboss.space/) uses it for login to prove ownership of a lightning node ![](../../.gitbook/assets/chrome\_g3QoEYiYL5.png)****
+[https://amboss.space/](https://amboss.space/) uses it for login. Users sign a message and prove ownership of a lightning node.
+
+&#x20;<img src="../../.gitbook/assets/chrome_g3QoEYiYL5.png" alt="" data-size="original">****
 
 ****
