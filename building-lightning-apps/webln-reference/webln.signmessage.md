@@ -30,3 +30,8 @@ await webln.signMessage("Sample message");
 
 {% embed url="https://codepen.io/getalby/pen/eYyXQNQ" %}
 
+`webln.signMessage()` **in the wild**
+
+[https://amboss.space/](https://amboss.space/) uses it for login to prove ownership of a lightning node ![](../../.gitbook/assets/chrome\_g3QoEYiYL5.png)****
+
+****
