@@ -10,6 +10,8 @@ There is a working group to merge Bitcoin on- and off-chain standards to facilit
 
 \--> [Bitcoin and Lightning Layer Network Specs](https://web.telegram.org/z/#-1784703682)
 
+and consider creating a GitHub issue [here](https://github.com/joule-labs/webln/issues)
+
 ### Content guidelines
 
 The WebLN guide is the work of many authors with different backgrounds, each with their own unique voice and perspective. To help us ensure a consistent written voice throughout the guide, follow these content guidelines.&#x20;
