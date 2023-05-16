@@ -5,13 +5,13 @@ Request that the user sends a payment for an invoice. The application needs to p
 **Method**
 
 ```typescript
-async function sendPayment(paymentRequest: string): SendPaymentResponse;
+async function sendPayment(paymentRequest: string): Promise<SendPaymentResponse>;
 ```
 
 #### Parameters
 
 ```typescript
-async function sendPayment(paymentRequest: string): SendPaymentResponse;
+async function sendPayment(paymentRequest: string): Promise<SendPaymentResponse>;
 ```
 
 #### Response
