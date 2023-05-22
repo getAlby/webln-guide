@@ -10,8 +10,8 @@ async function sendPayment(paymentRequest: string): SendPaymentResponse;
 
 #### Parameters
 
-```typescript
-async function sendPayment(paymentRequest: string): SendPaymentResponse;
+```javascript
+paymentRequest: string // the invoice you'd like the user to pay (lnbc...)
 ```
 
 #### Response
