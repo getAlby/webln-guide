@@ -28,7 +28,7 @@
 * [⚡ WebLN Providers](ressources/webln-providers.md)
 * [🚀 Showcases](ressources/showcases.md)
 * [👩🏫 Tutorials](ressources/tutorials.md)
-* [🌐 Additional Ressources](ressources/additional-ressources.md)
+* [🌐 Additional Resources](ressources/additional-ressources.md)
 
 ## Contribute
 
