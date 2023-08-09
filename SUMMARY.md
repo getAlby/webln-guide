@@ -19,6 +19,7 @@
   * [webln.verifyMessage()](building-lightning-apps/webln-reference/webln.verifymessage.md)
   * [🆕 webln.request()](building-lightning-apps/webln-reference/webln.request.md)
   * [🆕 webln.lnurl()](building-lightning-apps/webln-reference/webln.lnurl.md)
+  * [🆕 webln.on()](building-lightning-apps/webln-reference/webln.lnurl-1.md)
   * [🆕 webln.getBalance()](building-lightning-apps/webln-reference/webln.getbalance.md)
   * [Error handling](building-lightning-apps/webln-reference/error-handling.md)
 * [🛠 Libraries and Tools](building-lightning-apps/libraries-and-tools.md)
