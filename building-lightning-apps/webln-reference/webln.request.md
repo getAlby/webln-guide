@@ -55,7 +55,4 @@ await webln.request('connectpeer', { addr: {host, pubkey }, perm: true})
 
 ### Supported connectors
 
-| Connector                                           | 🐝 Alby |
-| --------------------------------------------------- | :-----: |
-| [Core Lightning](https://lightning.readthedocs.io/) |    ✅    |
-| [LND](https://api.lightning.community/)             |    ✅    |
+<table><thead><tr><th width="331">Connector</th><th align="center">🐝 Alby</th></tr></thead><tbody><tr><td><a href="https://lightning.readthedocs.io/">Core Lightning</a></td><td align="center">✅</td></tr><tr><td><a href="https://api.lightning.community/">LND</a></td><td align="center">✅</td></tr></tbody></table>
