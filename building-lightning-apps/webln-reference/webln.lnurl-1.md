@@ -18,7 +18,11 @@ function on(eventName: "accountChanged", listener: () => void): void;
 if (!webln.on) { alert('not supported'); }
 
 await webln.enable();
-webln.on("accountChanged", () => {console.log("account Changed!")}); // callback is executed once account is changed in provided with multiple accounts
+webln.on("accountChanged", accountChangedHandler); // callback is executed once account is changed in provided with multiple accounts
+
+function accountChangedHandler() {
+    console.log("Account Changed!");
+}
 ```
 
 #### Demo

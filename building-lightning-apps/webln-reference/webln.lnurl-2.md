@@ -24,8 +24,8 @@ webln.on("accountChanged", accountChangedHandler); // callback is executed once 
 // use .off() to unsubscribe from the event. 
 webln.off("accountChanged", accountChangedHandler);
 
-function accountChangedHandler(){
-console.log("Account Changed!");
+function accountChangedHandler() {
+    console.log("Account Changed!");
 }
 
 
