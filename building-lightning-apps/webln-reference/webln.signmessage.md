@@ -30,12 +30,11 @@ await webln.signMessage("Sample message");
 
 {% embed url="https://codepen.io/getalby/pen/eYyXQNQ" %}
 
-****
+
 
 **Example in the wild**
 
 [https://amboss.space/](https://amboss.space/) uses `webln.signMessage()`for login. Users sign a message and prove ownership of a lightning node.
 
-&#x20;<img src="../../.gitbook/assets/chrome_g3QoEYiYL5.png" alt="" data-size="original">****
+&#x20;<img src="../../.gitbook/assets/chrome_g3QoEYiYL5.png" alt="" data-size="original">
 
-****
