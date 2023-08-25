@@ -1,6 +1,6 @@
 # webln.getInfo()
 
-Get information about the connected node: node alias, public key and color
+Get information about the connected node and what WebLN methods it supports.
 
 #### Method
 
@@ -17,8 +17,9 @@ interface GetInfoResponse = {
     pubkey: string;
     color?: string;
   },
-  // Not supported by all connectors (see webln.request for more info)
-  methods: string[]; 
+  // "request.*" methods are not supported by all connectors
+  // (see webln.request for more info)
+  methods: string[]; // e.g. "makeInvoice", "sendPayment", "request.openchannel", ...
 }
 ```
 
