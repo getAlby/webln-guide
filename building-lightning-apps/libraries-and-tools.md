@@ -11,9 +11,9 @@ Available libraries and tools for a quick start.
 
 ### Examples
 
-* [webln-demo](https://github.com/bumi/webln-demo)
-* [WebLN Experiments](https://webln.twentyuno.net)
-* [WebLN Sandbox](https://rolznz.github.io/webln-sandbox)
+* [webln-demo](https://github.com/bumi/webln-demo): Code examples to build your first lightning web application
+* [WebLN Experiments](https://webln.twentyuno.net): Try out different WebLN use cases yourself
+* [WebLN Sandbox](https://rolznz.github.io/webln-sandbox): Learn what you can do with WebLN hands-on.&#x20;
 
 ### Templates
 
