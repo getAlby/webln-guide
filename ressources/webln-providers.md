@@ -6,7 +6,7 @@
 * [Joule](https://lightningjoule.com/): a WebLN-enabled browser extension that uses your own node
 * [Kollider](https://kollider.xyz/): a browser extension with stable sats support&#x20;
 * [kwh](https://github.com/fiatjaf/kwh/): A Firefox/Chrome extension for WebLN to your CoreLightning node&#x20;
-* [OneKey](https://onekey.so/): One-Stop open source crypto wallet and trusted by millions;
+* [OneKey](https://onekey.so/): Open-source crypto wallet
 
 ### Mobile wallets
 
