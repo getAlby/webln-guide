@@ -18,4 +18,3 @@
 ### Mobile&#x20;
 
 * [Kiwi Browser](https://kiwibrowser.com/) with Chrome extension
-* [OneKey](https://onekey.so/): One-Stop open source crypto wallet and trusted by millions;
