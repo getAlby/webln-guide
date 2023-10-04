@@ -13,7 +13,7 @@
 * [Blixt Wallet](https://blixtwallet.github.io/): a non-custodial open-source Lightning Wallet with a WebLN browser
 * [BlueWallet](https://bluewallet.io/): a mobile wallet with a WebLN browser&#x20;
 * [Breez](https://breez.technology/): a mobile wallet with selected WebLN apps in their marketplace
-* [OneKey](https://onekey.so/): One-Stop open source crypto wallet and trusted by millions;
+* [OneKey](https://onekey.so/): Open-source crypto wallet with a WebLN browser
 
 ### Mobile&#x20;
 
