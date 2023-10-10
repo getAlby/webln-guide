@@ -1,70 +1,37 @@
-# 🆕 webln.lnurl()
+# 🆕 webln.sendPaymentAsync()
 
-Request to execute a [LNURL](https://github.com/lnurl/luds) request. The application needs to pass a [LNURL](https://github.com/lnurl/luds/blob/luds/01.md) string which should be provided for example by the application's backend. The lnurl function can also accept a [LUD-16](https://github.com/lnurl/luds/blob/luds/16.md) static identifier (e.g. username@getalby.com) instead of a LNURL string.
-
-The method returns a promise which resolves once the LNURL flow is completed. It returns the last response from the LNURL server. For LNURL-pay requests it also contains payment information (preimage, payment hash) and for LNURL-auth requests it contains auth information (message, signature)&#x20;
+Request that the user sends a payment for an invoice. The application needs to provide a [BOLT-11](https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md) invoice. The payment will only be initiated and will not wait for a preimage to be returned. This is useful when paying [HOLD invoices](https://guides.getalby.com/alby-guides/alby-browser-extension/features/hold-payments). There is no guarantee that the payment will be successfully sent to the receiver. It's up to the receiver to check whether or not the invoice has been paid.
 
 {% hint style="warning" %}
 This API may not be available on all [providers](https://www.webln.guide/ressources/webln-providers).&#x20;
 {% endhint %}
 
-#### Method
+**Method**
 
 ```typescript
-async function lnurl(lnurl: string): LNURLResponse;
+async function
+    sendPaymentAsync(paymentRequest: string): SendPaymentAsyncResponse;
+```
+
+#### Parameters
+
+```javascript
+paymentRequest: string // the invoice you'd like the user to pay (lnbc...)
 ```
 
 #### Response
 
 ```typescript
-type LNURLResponse =
-  | {
-      status: "OK";
-      data?: unknown
-    }
-  | { status: "ERROR"; reason: string };
+interface SendPaymentAsyncResponse {} // no preimage returned!
 ```
 
-#### LNURL-pay Response&#x20;
+#### Example
 
 ```typescript
-type LNURLPayResponse =
-  | {
-      status: "OK";
-      data: { 
-        preimage: string, 
-        paymentHash: string, 
-        paymentRequest: string
-      }
-    }
-  | { status: "ERROR"; reason: string };
+const invoice = "lnbc100...";
+const result = await window.webln.sendPaymentAsync(invoice);
 ```
 
-#### LNURL-auth Response&#x20;
+#### Demo
 
-```typescript
-type LNURLAuthResponse =
-  | {
-      status: "OK";
-      data: { 
-        message: string, 
-        signature: string
-      }
-    }
-  | { status: "ERROR"; reason: string };
-```
-
-#### Code Example <a href="#demo" id="demo"></a>
-
-```typescript
-// const lnurl = (provided by your application backend)
-if (!webln.lnurl) { alert('not supported'); }
-
-await webln.enable();
-const result = await webln.lnurl(lnurl); // promise resolves once the LNURL process is finished (e.g. a payment is sent or the login is complete)
-```
-
-#### Demos
-
-* [Lightsats](http://lightsats.com/) (LNURL-pay, LNURL-withdraw)
-* [getAlby.com](https://getalby.com/) (LNURL-auth login via getAlby extension, Lightning address)
+{% embed url="https://codepen.io/getalby/pen/KKbJvWy" %}
