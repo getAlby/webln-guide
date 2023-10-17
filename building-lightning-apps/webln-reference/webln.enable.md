@@ -11,15 +11,12 @@ async function enable(): void;
 **Example**
 
 ```javascript
-try {
-  if(typeof window.webln !== 'undefined') {
-    await window.webln.enable();
+  if(typeof window.webln !== 'undefined' && window.webln.isEnabled) {
+    const isEnabled = await window.webln.isEnabled();
+    // do something with the value
+    console.log(isEnabled)
+    
   }
-}
-catch(error) {
-  // User denied permission or cancelled 
-  console.log(error);
-}
 ```
 
 #### Demo

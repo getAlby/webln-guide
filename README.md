@@ -7,7 +7,7 @@ Bitcoin is a global payment protocol that anyone with Internet access can partic
 You may be interested in reading this guide if you want to build or operate a web application
 
 * that accepts or makes Bitcoin Lightning payments
-* that has a decentralized identity and authentication
+* that have decentralized identity and authentication
 
 All you need is to interact with a client application such as a browser extension that understands WebLN. It does so by providing a JavaScript API called `window.webln` on every web page you visit. To have a look at what this object looks like, have a look at the [WebLN Reference](building-lightning-apps/webln-reference/) or just type `window.webln` in the Chrome or Firefox DevTools console.
 

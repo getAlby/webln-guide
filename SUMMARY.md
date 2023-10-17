@@ -10,6 +10,7 @@
 
 * [👨💻 👨💻 Getting Started](building-lightning-apps/getting-started.md)
 * [💻 WebLN Reference](building-lightning-apps/webln-reference/README.md)
+  * [🆕 webln.isEnabled()](building-lightning-apps/webln-reference/webln.isenabled.md)
   * [webln.enable()](building-lightning-apps/webln-reference/webln.enable.md)
   * [webln.getInfo()](building-lightning-apps/webln-reference/webln.getinfo.md)
   * [webln.keysend()](building-lightning-apps/webln-reference/webln.keysend.md)
