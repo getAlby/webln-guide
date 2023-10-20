@@ -1,4 +1,4 @@
-# 👨💻 Getting Started
+# 👨💻 👨💻 Getting Started
 
 ### Installation
 
@@ -96,6 +96,16 @@ await window.webln.sendPayment();
 ```
 
 Have a look at the the [WebLN Reference](webln-reference/) for detailed explanations and usage examples for the different APIs.
+
+### WebLN Events
+
+WebLN triggers events like `webln:enabled` upon enabling, allowing apps and packages to subscribe and listen to these events.
+
+```javascript
+ window.addEventListener("webln:enabled", () => {
+            console.log("WebLN is enabled!");
+        });
+```
 
 ### Error handling
 
