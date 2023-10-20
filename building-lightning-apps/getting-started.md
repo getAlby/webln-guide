@@ -102,9 +102,9 @@ Have a look at the the [WebLN Reference](webln-reference/) for detailed explanat
 WebLN triggers events like `webln:enabled` upon enabling, allowing apps and packages to subscribe and listen to these events.
 
 ```javascript
- window.addEventListener("webln:enabled", () => {
-            console.log("WebLN is enabled!");
-        });
+window.addEventListener("webln:enabled", () => {
+    console.log("WebLN is enabled!");
+});
 ```
 
 ### Error handling
