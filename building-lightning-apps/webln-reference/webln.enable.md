@@ -11,11 +11,9 @@ async function enable(): void;
 **Example**
 
 ```javascript
-  if(typeof window.webln !== 'undefined' && window.webln.isEnabled) {
-    const isEnabled = await window.webln.isEnabled();
-    // do something with the value
-    console.log(isEnabled)
-    
+  if(typeof window.webln !== 'undefined') {
+    await window.webln.enable();
+    console.log(await window.webln.isEnabled());
   }
 ```
 
