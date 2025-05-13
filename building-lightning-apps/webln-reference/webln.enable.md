@@ -13,7 +13,7 @@ async function enable(): void;
 ```javascript
   if(typeof window.webln !== 'undefined') {
     await window.webln.enable();
-    console.log(window.webln.isEnabled());
+    console.log(await window.webln.isEnabled());
   }
 ```
 
